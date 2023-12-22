@@ -10,6 +10,9 @@ a random guy (me) on Github.
 # IvyBridge-Opencore
 Opencore Configuration of Intel IvyBridge Hackintosh (with some tweaks).
 
+<img src="https://i.ibb.co/fq0xwQ0/IMG-1841.jpg" width="500" height="600">
+Opencore Hackintosh running well with Ivy processor and NVidia GTX.
+
 # Status
 
 * OS: tested in BigSur 11.7.10
