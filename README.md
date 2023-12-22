@@ -19,33 +19,36 @@ Opencore Configuration of Intel IvyBridge Hackintosh (with some tweaks).
     * FileVault: un-tested
     * Boot-Audio: works with onboard audio passthrough
 * SMBIOS: iMac14,4
+* Power Management
+  * Sleep: works, see details below.
+  * EC: faked one
+  * USB Power: works even with USB3 passthrough
 
 # Hardware configuration
 
 * CPU:
-    * Intel 3,4 GHz Quad-Core Intel Core i7
+    * Intel 3,4 GHz Quad-Core Intel Core i7 (config.plist configuration is really important for CPU, in particular with Ivy CPU, please follow carrefuly all the instructions of the OpenCore Documentation). 
 * GPU:
-    * NVIDIA GeForce GTX 680 4 GB
-    * HDMI/DP Audio: works
-* USB(Passthrough): works
-* Power Manages
-  * Sleep: works, see details below.
-  * EC: faked one
-  * USB Power: works even with USB3 passthrough
+    * NVIDIA GeForce GTX 680 4 GB (Note that for this card Big Sur Opencore is the latest functionnal OS which support it, cf:documentation)
+    * HDMI/DP Audio: works well 
+* USB(Passthrough): works, no problem reported
 * RAM
   * 8 GB 1333 MHz DDR3
 * DISK
   * 120 GB Solid State SATA Drive && 2 TB SATA Disk
- 
+* ETHERNET
+  * RealtekRTL8111 kext added to OC configuration (not tested, but kext installed)
+* WIFI
+ * As there are no specific kext for WIFI on Bigsur, I managed to make it work thanks to chris1111 repo : https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter. Just follow readme file to install on your system. 
+
 # Tweaks
 
 I followed Opencore post-install recommendations in order to have a more stable,
 fluid Hackintosh.
 
-* Smoother GUI & resolution scale fixed
-* 
+* Smoother GUI & resolution scale fixed.
+* Fast booting removing verbose arguments.
 
-  
 # Usage
 1. Download the repository and put the EFI under your EFI disk while following the official Opencore documentation.
 2. To update your EFI folder with new kexts or else, you can mount partition using Diskutil native tool or any good
