@@ -2,7 +2,7 @@
 
 # Disclaimer
 Don't forget to backup original EFI Folder & use this configuration at your own risks.
-I strongly recommend you to full read official Opencore documentation related to IvyBridge, 
+I strongly recommend you to full read official Opencore documentation related to IvyBridge : https://dortania.github.io/OpenCore-Install-Guide/
 as it's easier to doublecheck if your hardware is compatible with this EFI. Additionaly, you'll
 learn a lot and avoid mistakes by building it yourself rather than simply copy/past a folder from
 a random guy (me) on Github.
